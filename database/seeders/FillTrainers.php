@@ -20,7 +20,9 @@ class FillTrainers extends Seeder
             [
                 'Name'=>"Oscar",
                 'LastName'=>"Alvarez",
-                'Email'=>"oscarm.alvarezg@gmail.com"
+                'Email'=>"oscarm.alvarezg@gmail.com",
+                'created_at' => now(),
+                'updated_at' => now()
             ]
         );
 
