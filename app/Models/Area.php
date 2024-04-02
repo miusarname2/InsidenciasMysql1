@@ -13,4 +13,8 @@ class Area extends Model
         'NameArea'
     ];
 
+    public function insidences()
+    {
+        return $this->hasMany(Insidences::class, 'AreaId');
+    }
 }

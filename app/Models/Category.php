@@ -14,4 +14,9 @@ class Category extends Model
         'CategoryName'
     ];
 
+    public function insidences()
+    {
+        return $this->hasMany(Insidences::class, 'CategoryId');
+    }
+
 }

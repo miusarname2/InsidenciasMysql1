@@ -25,4 +25,19 @@ class Insidences extends Model
         'AreaId' => 'int',
         'VenueSpecific'=> 'string'
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'CategoryId');
+    }
+
+    public function typeOfIncidence()
+    {
+        return $this->belongsTo(TypeOfInsidence::class, 'TypeOfInsidenceId');
+    }
+
+    public function area()
+    {
+        return $this->belongsTo(Area::class, 'AreaId');
+    }
 }

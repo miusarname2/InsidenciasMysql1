@@ -13,4 +13,9 @@ class TypeOfInsidence extends Model
     protected $fillable = [
         'TOI'
     ];
+
+    public function insidences()
+    {
+        return $this->hasMany(Insidences::class, 'TypeOfInsidenceId');
+    }
 }
