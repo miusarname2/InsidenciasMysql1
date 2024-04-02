@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\InsidencesController;
+use App\Http\Controllers\TrainerController;
+use App\Models\Insidences;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('insidences', InsidencesController::class);
+Route::resource('Admin',AdminController::class);
+Route::resource('trainer',TrainerController::class);
